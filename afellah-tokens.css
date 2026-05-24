@@ -161,6 +161,7 @@ h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: up
   display: flex; align-items: center; justify-content: center;
   color: var(--orange); font-size: 20px;
 }
+.trust-icon-box svg { width: 22px; height: 22px; }
 .trust-item-text { display: flex; flex-direction: column; }
 .trust-item-label { font-size: 11px; font-weight: 600; color: var(--mute); text-transform: uppercase; letter-spacing: .06em; }
 .trust-item-value { font-size: 13px; font-weight: 600; color: var(--ink); }
@@ -213,6 +214,7 @@ h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: up
   box-shadow: var(--shadow-md);
   border-color: var(--orange);
 }
+.service-icon svg { width: 26px; height: 26px; }
 .service-icon {
   width: 52px; height: 52px;
   background: var(--orange-light);
@@ -289,6 +291,7 @@ h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: up
   border-radius: 6px; display: flex; align-items: center;
   justify-content: center; font-size: 16px;
 }
+.trust-badge-icon svg { width: 18px; height: 18px; }
 .trust-badge-text h4 { font-size: 14px; font-weight: 700; margin-bottom: 3px; text-transform: none; letter-spacing: 0; }
 .trust-badge-text p { font-size: 13px; color: var(--ink-3); margin: 0; }
 

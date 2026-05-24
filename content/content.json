@@ -99,12 +99,12 @@
       "title": "Zuverlässige Haustechnik für Krefeld und den Niederrhein",
       "lead": "Von der Wärmepumpe bis zur Badsanierung – alles aus einer Hand, durch unser eigenes Meister-Team.",
       "items": [
-        { "icon": "🛁", "title": "Badplanung", "text": "Individuelle Planung Ihres Traumbads – abgestimmt auf Ihre Wünsche, Ihren Stil und Ihr Budget.", "tag": "", "href": "badsanierung.html" },
-        { "icon": "🚨", "title": "Notdienst", "text": "Rohrbruch oder Heizungsausfall? Wir sind rund um die Uhr erreichbar – auch an Wochenenden und Feiertagen.", "tag": "24/7", "href": "kontakt.html" },
-        { "icon": "♨️", "title": "Wärmepumpen", "text": "Planung, Installation und Förderung bis 70 %. Als Viessmann Fachpartner finden wir die optimale Lösung.", "tag": "Förderung bis 70 %", "href": "waermepumpe.html" },
-        { "icon": "🔨", "title": "Badsanierung", "text": "Von der Planung bis zur Fertigstellung – komplett aus einer Hand. Pünktlich, sauber, zum Festpreis.", "tag": "", "href": "badsanierung.html" },
-        { "icon": "🔧", "title": "Kundendienst &amp; Reparatur", "text": "Schnelle Problemlösung bei allen Sanitär- und Heizungsanlagen – herstellerunabhängig und zuverlässig.", "tag": "", "href": "kontakt.html" },
-        { "icon": "🌡️", "title": "Heizungswartung", "text": "Regelmäßige Wartung hält Ihre Anlage effizient und sicher. Herstellerunabhängig für alle gängigen Geräte.", "tag": "", "href": "kesselsanierung.html" }
+        { "icon": "bath", "title": "Badplanung", "text": "Individuelle Planung Ihres Traumbads – abgestimmt auf Ihre Wünsche, Ihren Stil und Ihr Budget.", "tag": "", "href": "badsanierung.html" },
+        { "icon": "alert", "title": "Notdienst", "text": "Rohrbruch oder Heizungsausfall? Wir sind rund um die Uhr erreichbar – auch an Wochenenden und Feiertagen.", "tag": "24/7", "href": "kontakt.html" },
+        { "icon": "snowflake", "title": "Wärmepumpen", "text": "Planung, Installation und Förderung bis 70 %. Als Viessmann Fachpartner finden wir die optimale Lösung.", "tag": "Förderung bis 70 %", "href": "waermepumpe.html" },
+        { "icon": "hammer", "title": "Badsanierung", "text": "Von der Planung bis zur Fertigstellung – komplett aus einer Hand. Pünktlich, sauber, zum Festpreis.", "tag": "", "href": "badsanierung.html" },
+        { "icon": "wrench", "title": "Kundendienst &amp; Reparatur", "text": "Schnelle Problemlösung bei allen Sanitär- und Heizungsanlagen – herstellerunabhängig und zuverlässig.", "tag": "", "href": "kontakt.html" },
+        { "icon": "thermometer", "title": "Heizungswartung", "text": "Regelmäßige Wartung hält Ihre Anlage effizient und sicher. Herstellerunabhängig für alle gängigen Geräte.", "tag": "", "href": "kesselsanierung.html" }
       ]
     },
     "schwerpunkt": {
@@ -121,8 +121,8 @@
       "title": "Ein Meisterbetrieb, auf den Sie sich verlassen können",
       "text": "Viele versprechen schnellen Service – wir halten ihn. Seit 2008 arbeiten wir ausschließlich mit eigenem Team, transparenten Preisen und Viessmann-Markenqualität.",
       "badges": [
-        { "icon": "🏆", "title": "Meisterbetrieb &amp; Viessmann Fachpartner", "text": "Zertifizierte Qualität und Herstellergarantie auf alle verbauten Teile." },
-        { "icon": "⚡", "title": "Schnell, transparent &amp; fair", "text": "Festpreisangebote, keine versteckten Kosten, ehrliche Beratung." }
+        { "icon": "award", "title": "Meisterbetrieb &amp; Viessmann Fachpartner", "text": "Zertifizierte Qualität und Herstellergarantie auf alle verbauten Teile." },
+        { "icon": "zap", "title": "Schnell, transparent &amp; fair", "text": "Festpreisangebote, keine versteckten Kosten, ehrliche Beratung." }
       ],
       "stats": [
         { "num": "hunderte", "label": "zufriedene Kunden" },
@@ -156,9 +156,9 @@
       "title": "Alles aus einer Hand – von der Beratung bis zur Wartung",
       "lead": "Wir übernehmen Planung, Installation, Förderantrag und langfristige Wartung. Sie haben einen Ansprechpartner für alle Schritte.",
       "items": [
-        { "icon": "🔧", "title": "Planung &amp; Installation", "text": "Heizlast-Berechnung, Auswahl der passenden Wärmepumpe und fachgerechte Montage durch unser eigenes Meister-Team.", "tag": "", "href": "kontakt.html", "image": { "src": "assets/techniker-waermepumpe-montage-1024x683.webp", "alt": "Wärmepumpen-Montage" } },
-        { "icon": "📋", "title": "Förderservice KfW &amp; BAFA", "text": "Wir berechnen Ihre Förderhöhe, stellen den Antrag bei der KfW (Programm 458) und kümmern uns um die komplette Abwicklung.", "tag": "bis 70 %", "href": "kontakt.html", "image": { "src": "assets/kfw-1024x559.webp", "alt": "KfW Förderung Wärmepumpe" } },
-        { "icon": "🛠️", "title": "Wartung &amp; Service", "text": "Regelmäßige Wartung sichert Effizienz und Lebensdauer. Wartungsvertrag mit Inspektions- und Verschleißteile-Service.", "tag": "", "href": "kontakt.html", "image": { "src": "assets/waermepumpe-innenleben-technik.webp", "alt": "Wärmepumpen-Wartung" } }
+        { "icon": "wrench", "title": "Planung &amp; Installation", "text": "Heizlast-Berechnung, Auswahl der passenden Wärmepumpe und fachgerechte Montage durch unser eigenes Meister-Team.", "tag": "", "href": "kontakt.html", "image": { "src": "assets/techniker-waermepumpe-montage-1024x683.webp", "alt": "Wärmepumpen-Montage" } },
+        { "icon": "document", "title": "Förderservice KfW &amp; BAFA", "text": "Wir berechnen Ihre Förderhöhe, stellen den Antrag bei der KfW (Programm 458) und kümmern uns um die komplette Abwicklung.", "tag": "bis 70 %", "href": "kontakt.html", "image": { "src": "assets/kfw-1024x559.webp", "alt": "KfW Förderung Wärmepumpe" } },
+        { "icon": "toolbox", "title": "Wartung &amp; Service", "text": "Regelmäßige Wartung sichert Effizienz und Lebensdauer. Wartungsvertrag mit Inspektions- und Verschleißteile-Service.", "tag": "", "href": "kontakt.html", "image": { "src": "assets/waermepumpe-innenleben-technik.webp", "alt": "Wärmepumpen-Wartung" } }
       ]
     },
     "kfw": {
