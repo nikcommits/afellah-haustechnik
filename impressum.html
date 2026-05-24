@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum - Afellah Haustechnik</title>
+  <link rel="stylesheet" href="afellah-tokens.css?v=1">
+  <script src="./scripts/ase-bridge.js"></script>
+  <script src="./content/content.js"></script>
+  <style>
+    .legal-section { max-width: 800px; margin: 60px auto 0; padding: 0 24px 60px; }
+    .legal-section h1 { font-size: 32px; margin-bottom: 16px; }
+    .legal-section h2 { font-size: 18px; margin-top: 28px; margin-bottom: 12px; }
+    .legal-section p { line-height: 1.7; color: var(--ink-3); margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+
+<section class="legal-section">
+  <h1 data-ase="impressum.title"></h1>
+  <p data-ase="impressum.lead"></p>
+
+  <h2>Betreiber dieser Website</h2>
+  <p data-ase="impressum.company"></p>
+  <p data-ase="impressum.owner"></p>
+  <p>
+    <span data-ase="impressum.address_street"></span><br>
+    <span data-ase="impressum.address_city"></span>
+  </p>
+
+  <h2 data-ase="impressum.contact_title"></h2>
+  <p data-ase="impressum.phone"></p>
+  <p data-ase="impressum.email"></p>
+
+  <h2>Berufsrechtliche Angaben</h2>
+  <p data-ase="impressum.job_title"></p>
+  <p data-ase="impressum.regulations"></p>
+</section>
+
+<footer class="site" style="margin-top: 40px;">
+  <div class="wrap">
+    <div class="bottom" style="justify-content: center; border: none; padding-top: 0; margin-top: 0;">
+      <a href="index.html">← Zur Startseite</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

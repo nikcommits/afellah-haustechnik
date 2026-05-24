@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "title": "Afellah Haustechnik - Ihr Meisterbetrieb für Sanitär & Heizung in Krefeld",
+    "description": "Meisterbetrieb für Sanitär und Heizung in Krefeld. Professionelle Beratung, schriftliche Festpreise und zuverlässiger Service seit Jahren. Jetzt anfragen!",
+    "language": "de"
+  },
+  "header": {
+    "phone": {
+      "display": "0173 519 2738",
+      "href": "tel:01735192738",
+      "hours": "Mo-Fr 8:00–17:00 Uhr"
+    },
+    "cta": {
+      "text": "Direkt anfragen",
+      "href": "#kontakt"
+    }
+  },
+  "hero": {
+    "eyebrow": "Sanitär · Heizung · Krefeld",
+    "title": "Ihr Meisterbetrieb für<br/><span class=\"c-blue\">Sanitär</span> <span class=\"c-amp\">&</span> <span class=\"c-red\">Heizung</span>",
+    "lead": "Professionelle Lösungen für Ihr Zuhause: von der Badplanung über Heizungswartung bis zur Notfallreparatur. Schnell, zuverlässig und handwerklich sauber.",
+    "cta_primary": { "text": "Anfrage starten <span class=\"arr\">→</span>", "href": "#kontakt" },
+    "trust": {
+      "years": "Krefeld",
+      "years_lbl": "& Umkreis 50 km",
+      "meister": "Meisterbetrieb",
+      "meister_lbl": "Professionelle Arbeit",
+      "price": "Zuverlässig",
+      "price_lbl": "24h Rückmeldung"
+    },
+    "image": { "src": "assets/hero.webp", "alt": "Luft-Wärmepumpe an einem Backsteinhaus" }
+  },
+  "trust_bar": [
+    { "title": "Schnelle Reaktion", "subtitle": "24h Rückmeldung garantiert", "icon": "phone" },
+    { "title": "Meisterqualität", "subtitle": "Professionelle Handwerksarbeit", "icon": "check" },
+    { "title": "Festpreis Garantie", "subtitle": "Transparente Kostenplanung", "icon": "price" },
+    { "title": "Notdienst verfügbar", "subtitle": "Auch am Wochenende", "icon": "star" }
+  ],
+  "leistungen": {
+    "eyebrow": "Unsere Leistungen",
+    "title": "Alles rund um Sanitär und Heizung",
+    "lead": "Wir bieten Ihnen <strong>umfassende Lösungen</strong> für alle Ihre Anforderungen – von der Planung bis zur professionellen Ausführung.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Badplanung",
+        "text": "Individuelle Badplanung nach Ihren Wünschen und Anforderungen. Wir beraten Sie von der ersten Idee bis zur Umsetzung.",
+        "label": "Bad-Design · Planung",
+        "tag": "",
+        "href": "#kontakt",
+        "image": { "src": "assets/badplanung.webp", "alt": "Modernes Badezimmer mit Dusche und Waschtisch" }
+      },
+      {
+        "num": "02",
+        "title": "Notdienst",
+        "text": "Notfallreparaturen rund um die Uhr erreichbar. Schnelle und zuverlässige Hilfe bei Heizungs- oder Rohrbeschädigungen.",
+        "label": "Notfall · Reparatur",
+        "tag": "24/7",
+        "href": "#kontakt",
+        "image": { "src": "assets/notdienst.webp", "alt": "Techniker bei einer Reparatur" }
+      },
+      {
+        "num": "03",
+        "title": "Wärmepumpen",
+        "text": "Moderne Wärmepumpentechnik für energieeffizientes Heizen. Beratung zu Fördermöglichkeiten und professionelle Installation.",
+        "label": "Heizung · Effizienz",
+        "tag": "Modern",
+        "href": "#kontakt",
+        "image": { "src": "assets/waermepumpe.webp", "alt": "Wärmepumpen-Außeneinheit" }
+      },
+      {
+        "num": "04",
+        "title": "Badsanierung",
+        "text": "Komplette Badsanierungen von Grund auf. Neue Fliesen, moderne Sanitärinstallationen und hochwertige Ausstattung.",
+        "label": "Bad · Sanierung",
+        "tag": "",
+        "href": "#kontakt",
+        "image": { "src": "assets/badsanierung.webp", "alt": "Renoviertes Badezimmer" }
+      },
+      {
+        "num": "05",
+        "title": "Kundendienst & Reparatur",
+        "text": "Wartung und Reparatur bestehender Anlagen. Regelmäßige Inspektionen und schnelle Fehlerbehebung vor Ort.",
+        "label": "Service · Wartung",
+        "tag": "",
+        "href": "#kontakt",
+        "image": { "src": "assets/kundendienst.webp", "alt": "Techniker bei der Heizungswartung" }
+      },
+      {
+        "num": "06",
+        "title": "Heizungswartung",
+        "text": "Regelmäßige Wartung Ihrer Heizungsanlage für optimale Effizienz und lange Lebensdauer. Sicherheit und Zuverlässigkeit garantiert.",
+        "label": "Heizung · Wartung",
+        "tag": "",
+        "href": "#kontakt",
+        "image": { "src": "assets/heizungswartung.webp", "alt": "Heizungsanlage in Betrieb" }
+      }
+    ]
+  },
+  "ablauf": {
+    "eyebrow": "Transparenter Ablauf",
+    "title": "Drei Schritte zu Ihrer Lösung",
+    "lead": "Unkompliziert und nachvollziehbar – so funktioniert die Zusammenarbeit mit uns.",
+    "steps": [
+      {
+        "num": "1",
+        "title": "Anfrage & Termin",
+        "text": "Sie kontaktieren uns per Telefon oder Formular. Wir bestätigen Ihren Termin spätestens innerhalb von 24 Stunden.",
+        "pill": "Rückmeldung innerhalb 24h",
+        "class": ""
+      },
+      {
+        "num": "2",
+        "title": "Beratung vor Ort",
+        "text": "Wir kommen zu Ihnen, analysieren die Situation und erstellen einen transparenten Kostenvorschlag.",
+        "pill": "Kostenloses Beratungsgespräch",
+        "class": "acc-blue"
+      },
+      {
+        "num": "3",
+        "title": "Professionelle Ausführung",
+        "text": "Saubere Arbeit, pünktliche Termine und umfassende Gewährleistung. Sie erhalten eine vollständige Dokumentation.",
+        "pill": "Garantie auf Handwerksleistung",
+        "class": ""
+      }
+    ]
+  },
+  "social_proof": {
+    "eyebrow": "Kundenzitate",
+    "title": "Das sagen unsere Kunden",
+    "items": [
+      {
+        "quote": "Meister „Afellah" hat das echt drauf alles was mit Heizung/Sanitär zu tun hat...Top👌",
+        "author": "Zufriedener Kunde",
+        "rating": "5"
+      },
+      {
+        "quote": "Beratung, Service, Zuverlässigkeit, Ausführung und ein sehr gutes Angebot – stimmt alles.",
+        "author": "Kundenzufriedenheit",
+        "rating": "5"
+      },
+      {
+        "quote": "Herr Afellah ist ein ausgezeichneter Heizung-Sanitär Installateur!",
+        "author": "Zuverlässiger Partner",
+        "rating": "5"
+      }
+    ]
+  },
+  "kontakt": {
+    "eyebrow": "Kontakt",
+    "title": "Jetzt anfragen",
+    "lead": "Haben Sie eine Frage oder möchten einen Termin vereinbaren? Wir freuen uns auf Ihren Anruf oder Ihre Nachricht.",
+    "side_info": [
+      { "icon": "phone", "title": "0173 519 2738", "text": "Mo-Fr 8:00–17:00 Uhr" },
+      { "icon": "email", "title": "info@afellah-haustechnik.de", "text": "Antwort innerhalb von 24h" },
+      { "icon": "star", "title": "Einsatzgebiet", "text": "Krefeld und Umkreis 50 km" }
+    ]
+  },
+  "footer": {
+    "brand_desc": "Meisterbetrieb für Sanitär und Heizung in Krefeld. Zuverlässige Lösungen für Ihr Zuhause.",
+    "hours": "Öffnungszeiten: Mo-Fr 8:00–17:00 · Sa/So geschlossen",
+    "col1_title": "Leistungen",
+    "col1_links": [
+      { "text": "Badplanung", "href": "index.html#leistungen" },
+      { "text": "Notdienst", "href": "index.html#leistungen" },
+      { "text": "Wärmepumpen", "href": "index.html#leistungen" },
+      { "text": "Badsanierung", "href": "index.html#leistungen" }
+    ],
+    "col2_title": "Service",
+    "col2_links": [
+      { "text": "Kundendienst", "href": "index.html#leistungen" },
+      { "text": "Heizungswartung", "href": "index.html#leistungen" },
+      { "text": "Kontakt", "href": "index.html#kontakt" }
+    ],
+    "col3_title": "Kontakt",
+    "col3_links": [
+      { "text": "0173 519 2738", "href": "tel:01735192738" },
+      { "text": "info@afellah-haustechnik.de", "href": "mailto:info@afellah-haustechnik.de" }
+    ],
+    "copyright": "© 2026 Afellah Haustechnik. Alle Rechte vorbehalten.",
+    "bottom_links": [
+      { "text": "Impressum", "href": "impressum.html" },
+      { "text": "Datenschutz", "href": "datenschutz.html" }
+    ]
+  },
+  "impressum": {
+    "title": "Impressum",
+    "lead": "Angaben gemäß § 5 TMG",
+    "company": "Afellah Haustechnik",
+    "owner": "Inhaber: Afellah",
+    "address_street": "Krefeld",
+    "address_city": "Deutschland",
+    "contact_title": "Kontakt",
+    "phone": "Telefon: 0173 519 2738",
+    "email": "E-Mail: info@afellah-haustechnik.de",
+    "job_title": "Meisterbetrieb für Sanitär- und Heizungstechnik",
+    "regulations": "Berufsrechtliche Regelungen: Handwerksordnung (HwO)"
+  },
+  "datenschutz": {
+    "title": "Datenschutzerklärung",
+    "lead": "Informationen über die Verarbeitung Ihrer personenbezogenen Daten",
+    "sections": [
+      {
+        "title": "1. Datenschutz auf einen Blick",
+        "text": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen."
+      },
+      {
+        "title": "2. Verantwortliche Stelle",
+        "text": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br/><br/><strong>Afellah Haustechnik</strong><br/>Krefeld, Deutschland<br/><br/>Telefon: 0173 519 2738<br/>E-Mail: info@afellah-haustechnik.de"
+      },
+      {
+        "title": "3. SSL- bzw. TLS-Verschlüsselung",
+        "text": "Diese Seite nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile."
+      },
+      {
+        "title": "4. Ihre Rechte",
+        "text": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten und deren Verwendung."
+      }
+    ]
+  }
+}

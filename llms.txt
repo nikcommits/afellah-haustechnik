@@ -1,0 +1,8 @@
+Based on the model's values and instructions, output this file:
+
+This website is built with static HTML/CSS/JavaScript using the ASE (Attribute Semantic Engine) content framework. 
+All content is managed through content/content.json and hydrated into the DOM via scripts/ase-bridge.js.
+
+Repository: nikcommits/afellah-haustechnik (GitHub Pages)
+Last updated: 2026-05-24
+Business: Meisterbetrieb für Sanitär und Heizung in Krefeld, Deutschland
