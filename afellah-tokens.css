@@ -89,7 +89,8 @@ h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: up
    HEADER
    ============================================================ */
 .site-header {
-  background: var(--dark);
+  background: #fff;
+  border-bottom: 1px solid var(--hair);
   position: sticky; top: 0; z-index: 100;
 }
 .header-row {
@@ -100,13 +101,14 @@ h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: up
 .logo-img { height: 44px; width: auto; }
 .main-nav { display: flex; gap: 4px; }
 .nav-link {
-  font-size: 13px; font-weight: 600; color: rgba(255,255,255,.8);
+  font-size: 13px; font-weight: 600; color: var(--ink);
   transition: color .2s; padding: 6px 12px; border-radius: 4px;
 }
-.nav-link:hover, .nav-link.active { color: #fff; background: rgba(255,255,255,.08); }
+.nav-link:hover { color: var(--orange); }
+.nav-link.active { color: var(--orange); background: var(--orange-light); }
 .nav-toggle {
   display: none; background: none; border: none;
-  font-size: 22px; cursor: pointer; padding: 4px 8px; color: #fff;
+  font-size: 22px; cursor: pointer; padding: 4px 8px; color: var(--ink);
 }
 
 /* ============================================================
@@ -503,10 +505,10 @@ h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: up
   .main-nav {
     display: none;
     position: absolute; top: 100%; left: 0; right: 0;
-    background: var(--dark); padding: 16px 20px 24px;
+    background: #fff; padding: 16px 20px 24px;
     flex-direction: column; gap: 4px;
-    border-top: 1px solid rgba(255,255,255,.08);
-    box-shadow: 0 8px 24px rgba(0,0,0,.4);
+    border-top: 1px solid var(--hair);
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
   }
   .site-header.nav-open .main-nav { display: flex; }
   .main-nav .nav-link { padding: 12px 14px; font-size: 15px; }
