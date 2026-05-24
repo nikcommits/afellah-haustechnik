@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "afellah",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4174", "--directory", "C:\\Users\\nikfr\\Dev\\03_Websites\\afellah-haustechnik"],
+      "port": 4174
+    }
+  ]
+}
