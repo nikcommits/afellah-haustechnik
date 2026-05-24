@@ -1,14 +1,13 @@
 /**
- * ASE Bridge v1.4
+ * ASE Bridge v1.5
  * Hydrates static HTML from content/content.json via data-ase attributes.
+ *
+ * Supported attributes:
+ *   data-ase="path.to.value"      → sets innerHTML / src+alt (img) / content (meta) / href (a)
+ *   data-ase-href-path="path"     → sets href on an <a> from a path in root data
+ *   data-ase-item="key" | "."     → list item field (inside <template>)
+ *   data-ase-href="key"           → list item href field (inside <template>)
  */
-
-const SVG_ICONS = {
-  check: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>`,
-  phone: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
-  email: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>`,
-  star: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></polygon></svg>`
-};
 
 async function initASE() {
   try {
@@ -30,11 +29,20 @@ async function initASE() {
         return;
       }
 
-      if (value === undefined || value === null || value === '') {
-        return;
+      if (value !== undefined && value !== null && value !== '') {
+        applyASEValue(el, value);
       }
 
-      applyASEValue(el, value);
+      const hrefPath = el.getAttribute('data-ase-href-path');
+      if (hrefPath && el.tagName === 'A') {
+        const hrefVal = getByPath(data, hrefPath);
+        if (hrefVal) el.href = hrefVal;
+      }
+    });
+
+    document.querySelectorAll('a[data-ase-href-path]:not([data-ase])').forEach((el) => {
+      const hrefVal = getByPath(data, el.getAttribute('data-ase-href-path'));
+      if (hrefVal) el.href = hrefVal;
     });
 
     console.log('ASE: Content hydrated successfully.');
@@ -48,21 +56,25 @@ function getByPath(source, path) {
 }
 
 function applyASEValue(el, value) {
-  const isIconItem = el.getAttribute('data-ase-item') === 'icon';
-  if (isIconItem && SVG_ICONS[value]) {
-    el.innerHTML = SVG_ICONS[value];
-    return;
-  }
-
   if (el.tagName === 'IMG') {
     const image = typeof value === 'object' ? value : { src: value };
-    el.src = image.src || el.src;
+    if (image.src) el.src = image.src;
     if (image.alt !== undefined) el.alt = image.alt;
     return;
   }
 
   if (el.tagName === 'META') {
     el.setAttribute('content', value);
+    return;
+  }
+
+  if (el.tagName === 'A' && typeof value === 'object' && value !== null) {
+    if (value.href) el.href = value.href;
+    if (!el.children.length && value.text !== undefined) el.innerHTML = value.text;
+    return;
+  }
+
+  if (typeof value === 'object' && value !== null) {
     return;
   }
 
@@ -84,7 +96,7 @@ function renderASEList(container, items) {
       const value = key === '.' ? item : getByPath(item, key);
 
       if (value === undefined || value === null || value === '') {
-        el.remove();
+        if (key !== '.') el.remove();
         return;
       }
 
