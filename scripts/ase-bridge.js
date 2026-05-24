@@ -113,4 +113,23 @@ function renderASEList(container, items) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', initASE);
+function initNavToggle() {
+  const header = document.querySelector('.site-header');
+  const toggle = header?.querySelector('.nav-toggle');
+  if (!header || !toggle) return;
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    header.classList.toggle('nav-open');
+  });
+  header.querySelectorAll('.main-nav .nav-link').forEach((link) => {
+    link.addEventListener('click', () => header.classList.remove('nav-open'));
+  });
+  document.addEventListener('click', (e) => {
+    if (!header.contains(e.target)) header.classList.remove('nav-open');
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initASE();
+  initNavToggle();
+});

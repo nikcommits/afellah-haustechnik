@@ -500,9 +500,18 @@ h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: up
   .wrap { padding: 0 20px; }
   .section { padding: 48px 0; }
 
-  .main-nav { display: none; }
+  .main-nav {
+    display: none;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: var(--dark); padding: 16px 20px 24px;
+    flex-direction: column; gap: 4px;
+    border-top: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,.4);
+  }
+  .site-header.nav-open .main-nav { display: flex; }
+  .main-nav .nav-link { padding: 12px 14px; font-size: 15px; }
   .nav-toggle { display: block; }
-  .site-header .btn { display: none; }
+  .site-header .header-row > .btn { display: none; }
 
   .hero-section { padding: 40px 0; }
   .hero-grid { grid-template-columns: 1fr; gap: 28px; }
