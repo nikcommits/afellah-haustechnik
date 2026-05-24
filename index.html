@@ -3,172 +3,276 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" data-ase="meta.description">
-  <meta property="og:title" data-ase="meta.title">
-  <meta property="og:description" data-ase="meta.description">
-  <title data-ase="meta.title">Afellah Haustechnik</title>
-  <link rel="stylesheet" href="afellah-tokens.css?v=1">
-  <script src="./scripts/ase-bridge.js"></script>
-  <script src="./content/content.js"></script>
+  <meta name="description" content="Meisterbetrieb für Sanitär und Heizung in Krefeld. Viessmann Fachpartner. Wärmepumpen, Kesselsanierung, Badsanierung. Über 15 Jahre Erfahrung.">
+  <meta property="og:title" content="Afellah Haustechnik – Meisterbetrieb Krefeld">
+  <meta property="og:description" content="Sanitär & Heizung in Krefeld. Wärmepumpen, Kesselsanierung, Badsanierung. Viessmann Fachpartner seit 2008.">
+  <title>Afellah Haustechnik – Meisterbetrieb für Sanitär & Heizung Krefeld</title>
+  <link rel="stylesheet" href="afellah-tokens.css">
 </head>
 <body>
 
 <!-- Header -->
-<header class="site">
+<header class="site-header">
   <div class="wrap">
-    <div class="row">
-      <div class="logo" data-ase="header.logo"></div>
-      <nav>
-        <a href="#leistungen">Leistungen</a>
-        <a href="#ablauf">Ablauf</a>
-        <a href="#kontakt">Kontakt</a>
+    <div class="header-row">
+      <a href="index.html" class="logo-link">
+        <img src="assets/Afellah-logo-farbe.webp" alt="Afellah Haustechnik" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link active">Startseite</a>
+        <a href="waermepumpe.html" class="nav-link">Wärmepumpe</a>
+        <a href="kesselsanierung.html" class="nav-link">Kesselsanierung</a>
+        <a href="badsanierung.html" class="nav-link">Badsanierung</a>
+        <a href="kontakt.html" class="nav-link">Kontakt</a>
       </nav>
-      <div class="ctas">
-        <a href="#kontakt" class="btn btn-primary" data-ase="header.cta.text"></a>
-      </div>
+      <a href="kontakt.html" class="btn btn-primary">Kostenloses Angebot anfordern</a>
+      <button class="nav-toggle" aria-label="Menü öffnen">&#9776;</button>
     </div>
   </div>
 </header>
 
 <!-- Hero -->
-<section class="hero" id="hero">
+<section class="hero-section">
   <div class="wrap">
-    <div class="content">
-      <div class="text">
-        <div class="eyebrow" data-ase="hero.eyebrow"></div>
-        <h1 class="h1" data-ase="hero.title"></h1>
-        <p class="lead" data-ase="hero.lead"></p>
-        <div style="margin-top: 28px;">
-          <a href="#kontakt" class="btn btn-primary" data-ase="hero.cta_primary.text"></a>
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="eyebrow">Viessmann Fachpartner · Krefeld & Umland</div>
+        <h1>Ihr Meisterbetrieb für Sanitär &amp; Heizung in Krefeld</h1>
+        <p class="lead">Als Viessmann Fachpartner mit über 15 Jahren Erfahrung und hunderten zufriedener Kunden stehen wir für zuverlässige Haustechnik – von der Wärmepumpe bis zur Badsanierung.</p>
+        <div class="hero-ctas">
+          <a href="tel:01735192738" class="btn btn-primary">Jetzt anrufen 0173 519 2738</a>
+          <a href="kontakt.html" class="btn btn-outline">Projekt unverbindlich anfragen</a>
         </div>
       </div>
-      <div class="image">
-        <img data-ase="hero.image">
+      <div class="hero-image">
+        <img src="assets/luft-waermepumpe-backsteinhaus-scaled.webp" alt="Afellah Haustechnik – Wärmepumpe am Wohnhaus in Krefeld">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<section class="trust-bar">
+  <div class="wrap">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="trust-icon">✓</span>
+        <span>Meisterbetrieb seit 2008</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">✓</span>
+        <span>Viessmann Fachpartner</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">✓</span>
+        <span>Notdienst rund um die Uhr</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">✓</span>
+        <span>Krefeld & Umkreis 50 km</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Warum Afellah -->
+<section class="section">
+  <div class="wrap">
+    <div class="two-col">
+      <div class="col-text">
+        <div class="eyebrow">Warum Afellah Haustechnik?</div>
+        <h2>Damit Ihre Haustechnik zuverlässig funktioniert – heute und in 20 Jahren</h2>
+        <p>Als Meisterbetrieb seit 2008 arbeiten wir ausschließlich mit eigenem Team – keine Subunternehmer. Als Viessmann Fachpartner verbauen wir ausschließlich Markenteile mit Herstellergarantie. Und wenn es brennt: Unser Notdienst ist rund um die Uhr erreichbar, auch am Wochenende.</p>
+        <ul class="check-list">
+          <li>Eigenes Team ohne Subunternehmer</li>
+          <li>Viessmann Markenteile mit Herstellergarantie</li>
+          <li>Notdienst 24/7 – auch am Wochenende</li>
+          <li>Festpreisangebote – keine versteckten Kosten</li>
+        </ul>
+        <a href="kontakt.html" class="btn btn-primary" style="margin-top:24px;">Kostenlos beraten lassen</a>
+      </div>
+      <div class="col-stats">
+        <div class="stat-card">
+          <div class="stat-num">17+</div>
+          <div class="stat-label">Jahre Erfahrung</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">100+</div>
+          <div class="stat-label">Zufriedene Kunden</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Notdienst</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">50 km</div>
+          <div class="stat-label">Einsatzgebiet</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Leistungen -->
-<section id="leistungen">
+<section class="section bg-light" id="leistungen">
   <div class="wrap">
     <div class="section-header">
-      <div class="eyebrow" data-ase="leistungen.eyebrow"></div>
-      <h2 class="h2" data-ase="leistungen.title"></h2>
-      <p class="lead" data-ase="leistungen.lead"></p>
+      <div class="eyebrow">Unsere Leistungen</div>
+      <h2>Alles aus einer Hand</h2>
+      <p class="lead">Von der Wärmepumpe bis zur Badsanierung – wir decken alle Bereiche der Haustechnik ab.</p>
     </div>
-    
-    <div class="cards-grid" data-ase="leistungen.items">
-      <template>
-        <div class="card">
-          <div class="num" data-ase-item="num"></div>
-          <h3 class="h3" data-ase-item="title"></h3>
-          <p class="text" data-ase-item="text"></p>
-          <div class="label" data-ase-item="label"></div>
-        </div>
-      </template>
+    <div class="cards-grid-3">
+      <a href="waermepumpe.html" class="service-card">
+        <div class="service-num">01</div>
+        <h3>Wärmepumpe</h3>
+        <p>Beratung, Planung und Installation von Luft-Wasser- und Erdwärme-Pumpen. Förderung bis 70 % inklusive.</p>
+        <span class="service-tag">Förderung bis 70 %</span>
+      </a>
+      <a href="kesselsanierung.html" class="service-card">
+        <div class="service-num">02</div>
+        <h3>Kesselsanierung</h3>
+        <p>Alter Heizkessel raus, moderner Brennwertkessel rein. Schnell, sauber und zum Festpreis.</p>
+        <span class="service-tag">Festpreis</span>
+      </a>
+      <a href="badsanierung.html" class="service-card">
+        <div class="service-num">03</div>
+        <h3>Badsanierung</h3>
+        <p>Komplette Badsanierung aus einer Hand. Von der Planung bis zur Fertigstellung – pünktlich und sauber.</p>
+        <span class="service-tag">Komplett aus einer Hand</span>
+      </a>
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <h3>Badplanung</h3>
+        <p>Individuelle Planung Ihres neuen Traumbads – abgestimmt auf Ihre Wünsche und Ihr Budget.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <h3>Notdienst</h3>
+        <p>Rohrbruch oder Heizungsausfall? Wir sind rund um die Uhr erreichbar – auch an Wochenenden.</p>
+        <span class="service-tag">24/7</span>
+      </div>
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <h3>Kundendienst & Wartung</h3>
+        <p>Regelmäßige Wartung und schnelle Reparatur – herstellerunabhängig für alle gängigen Anlagen.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Ablauf -->
-<section id="ablauf" style="background: var(--paper-2);">
+<section class="section">
   <div class="wrap">
     <div class="section-header">
-      <div class="eyebrow" data-ase="ablauf.eyebrow"></div>
-      <h2 class="h2" data-ase="ablauf.title"></h2>
-      <p class="lead" data-ase="ablauf.lead"></p>
+      <div class="eyebrow">So einfach geht's</div>
+      <h2>Ihr Projekt in 3 Schritten</h2>
     </div>
-
-    <div class="cards-grid" data-ase="ablauf.steps">
-      <template>
-        <div class="card">
-          <div class="num" data-ase-item="num"></div>
-          <h3 class="h3" data-ase-item="title"></h3>
-          <p class="text" data-ase-item="text"></p>
-          <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--hair);">
-            <span style="display: inline-block; padding: 6px 12px; background: var(--blue); color: #fff; border-radius: 20px; font-size: 11px; font-weight: 600;" data-ase-item="pill"></span>
-          </div>
-        </div>
-      </template>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Kostenlose Erstberatung vor Ort</h3>
+        <p>Wir schauen uns Ihre Situation an und besprechen Ihre Wünsche – kostenlos und unverbindlich.</p>
+        <span class="pill">Rückmeldung innerhalb 24h</span>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Transparentes Festpreis-Angebot</h3>
+        <p>Sie erhalten ein schriftliches, vollständiges Angebot. Was draufsteht, wird gemacht.</p>
+        <span class="pill">Kostenloses Beratungsgespräch</span>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Termingerechte Umsetzung</h3>
+        <p>Unser eigenes Team führt die Arbeiten pünktlich und sauber aus – mit Garantie auf alle Leistungen.</p>
+        <span class="pill">Garantie auf Handwerksleistung</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Social Proof -->
-<section id="testimonials">
+<!-- Testimonials -->
+<section class="section bg-light">
   <div class="wrap">
     <div class="section-header">
-      <div class="eyebrow" data-ase="social_proof.eyebrow"></div>
-      <h2 class="h2" data-ase="social_proof.title"></h2>
+      <div class="eyebrow">Kundenstimmen</div>
+      <h2>Das sagen unsere Kunden</h2>
     </div>
-
-    <div class="cards-grid" data-ase="social_proof.items">
-      <template>
-        <div class="card">
-          <p style="font-size: 14px; font-style: italic; margin: 0 0 16px; color: var(--ink-3);" data-ase-item="quote"></p>
-          <p style="font-size: 13px; font-weight: 600; color: var(--ink); margin: 0;" data-ase-item="author"></p>
-          <div style="margin-top: 8px; color: var(--mute); font-size: 12px;" data-ase-item="rating"></div>
-        </div>
-      </template>
+    <div class="cards-grid-3">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">„Fußbodenheizung bis Badezimmer komplett erneuert. Meister Afellah hat das echt drauf. Top 👌"</p>
+        <p class="author">Herr A. S.</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">„Gasheizung ausgetauscht – Beratung war super, Service top. Kann ich nur weiterempfehlen."</p>
+        <p class="author">Herr T. C.</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">„Badezimmer-Renovierung komplett durch Afellah. Sehr professionell, pünktlich und sauber. Uneingeschränkte Empfehlung!"</p>
+        <p class="author">Herr E. A.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Kontakt -->
-<section id="kontakt" style="background: var(--paper-2);">
+<!-- Kontakt CTA -->
+<section class="section cta-section">
   <div class="wrap">
-    <div class="section-header">
-      <div class="eyebrow" data-ase="kontakt.eyebrow"></div>
-      <h2 class="h2" data-ase="kontakt.title"></h2>
-      <p class="lead" data-ase="kontakt.lead"></p>
-    </div>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 28px; max-width: 900px; margin: 0 auto;">
-      <div data-ase="kontakt.side_info">
-        <template>
-          <div class="card" style="text-align: center;">
-            <div style="width: 40px; height: 40px; background: var(--blue-tint); border-radius: 8px; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; color: var(--blue);" data-ase-item="icon"></div>
-            <h3 class="h3" style="font-size: 16px; margin: 0 0 8px;" data-ase-item="title"></h3>
-            <p class="text" style="margin: 0; font-size: 13px;" data-ase-item="text"></p>
-          </div>
-        </template>
+    <div class="cta-box">
+      <div class="cta-text">
+        <h2>Sie brauchen einen Haustechniker?</h2>
+        <p>Rufen Sie uns an oder senden Sie uns eine Nachricht. Wir melden uns innerhalb von 24 Stunden.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:01735192738" class="btn btn-primary btn-lg">0173 519 2738</a>
+        <a href="kontakt.html" class="btn btn-outline btn-lg">Nachricht senden</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- Footer -->
-<footer class="site">
+<footer class="site-footer">
   <div class="wrap">
-    <div class="top">
-      <div class="col brand-col">
-        <p data-ase="footer.brand_desc"></p>
-        <p style="font-size: 12px; color: var(--mute); margin-top: 16px;" data-ase="footer.hours"></p>
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <img src="assets/Afellah-logo-farbe.webp" alt="Afellah Haustechnik" class="footer-logo">
+        <p>Meisterbetrieb seit 2008<br>Viessmann Fachpartner</p>
+        <p class="footer-contact">
+          <a href="tel:01735192738">0173 519 2738</a><br>
+          <a href="mailto:info@afellah-haustechnik.de">info@afellah-haustechnik.de</a>
+        </p>
+        <p class="footer-hours">Mo – Fr: 08:00 – 17:00 Uhr<br>Sa & So: geschlossen</p>
       </div>
-      <div class="col">
-        <h4 data-ase="footer.col1_title"></h4>
-        <ul data-ase="footer.col1_links">
-          <template>
-            <li><a data-ase-item="text" data-ase-href="href"></a></li>
-          </template>
+      <div class="footer-col">
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="waermepumpe.html">Wärmepumpe</a></li>
+          <li><a href="kesselsanierung.html">Kesselsanierung</a></li>
+          <li><a href="badsanierung.html">Badsanierung</a></li>
         </ul>
       </div>
-      <div class="col">
-        <h4 data-ase="footer.col3_title"></h4>
-        <ul data-ase="footer.col3_links">
-          <template>
-            <li><a data-ase-item="text" data-ase-href="href"></a></li>
-          </template>
+      <div class="footer-col">
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutzerklärung</a></li>
         </ul>
       </div>
     </div>
-    <div class="bottom">
-      <span data-ase="footer.copyright"></span>
-      <div>
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-      </div>
+    <div class="footer-bottom">
+      <span>© 2026 AFELLAH Sanitär & Heizung – Krefeld & Umkreis 50 km</span>
+      <nav>
+        <a href="index.html">Startseite</a>
+        <a href="waermepumpe.html">Wärmepumpe Krefeld</a>
+        <a href="kesselsanierung.html">Kesselsanierung Krefeld</a>
+        <a href="badsanierung.html">Badsanierung Krefeld</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
     </div>
   </div>
 </footer>
