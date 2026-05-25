@@ -85,6 +85,22 @@
 
   document.body.insertAdjacentHTML('beforeend', html);
 
+  // Badge nur sichtbar wenn Footer im Viewport
+  const badge = document.getElementById('nf-badge');
+  badge.style.opacity = '0';
+  badge.style.pointerEvents = 'none';
+  badge.style.transition = 'opacity .3s ease';
+
+  const footer = document.querySelector('footer');
+  if (footer && window.IntersectionObserver) {
+    const observer = new IntersectionObserver(function (entries) {
+      const visible = entries[0].isIntersecting;
+      badge.style.opacity = visible ? '1' : '0';
+      badge.style.pointerEvents = visible ? 'auto' : 'none';
+    }, { threshold: 0.05 });
+    observer.observe(footer);
+  }
+
   window.nfToggle = function () {
     const card = document.getElementById('nf-card');
     const overlay = document.getElementById('nf-overlay');
