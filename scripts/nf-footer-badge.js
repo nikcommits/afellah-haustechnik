@@ -30,9 +30,9 @@
       <span>Melden Sie sich gerne unverbindlich bei mir.</span>
     </div>
     <div class="nf-card-body">
-      <img class="nf-card-avatar" src="/assets/nik-photo.webp" alt="Nick Frühschulz" onerror="this.style.display='none'">
+      <img class="nf-card-avatar" src="assets/nik-photo.webp" alt="Nik Frühschulz" onerror="this.style.display='none'">
       <div class="nf-card-info">
-        <strong>Nick Frühschulz</strong>
+        <strong>Nik Frühschulz</strong>
         <span>Web Performance · Voice Agents</span>
       </div>
     </div>
