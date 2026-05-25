@@ -1,7 +1,7 @@
 (function () {
   const css = `
 #nf-badge{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
-.nf-trigger{position:relative;width:80px;height:80px;border-radius:50%;border:none;background:transparent;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 2px 8px rgba(0,0,0,.25))}
+.nf-trigger{position:relative;width:80px;height:80px;border-radius:50%;border:none;background:#fff;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35))}
 .nf-ring{position:absolute;inset:0;width:100%;height:100%;animation:nf-spin 12s linear infinite}
 .nf-ring-text{font-size:10.5px;font-weight:700;letter-spacing:.05em;fill:#1a1a1a;font-family:system-ui,sans-serif}
 @keyframes nf-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
