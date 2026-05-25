@@ -30,10 +30,9 @@
       <span>Melden Sie sich gerne unverbindlich bei mir.</span>
     </div>
     <div class="nf-card-body">
-      <img class="nf-card-avatar" src="assets/nik-photo.webp" alt="Nik Frühschulz" onerror="this.style.display='none'">
+      <img class="nf-card-avatar" src="assets/nik-photo.webp" alt="Nik Frühschulz">
       <div class="nf-card-info">
-        <strong>Nik Frühschulz</strong>
-        <span>Web Performance</span>
+        <img src="assets/nf-logo-text.webp" alt="Nik Frühschulz Web Performance" style="max-width:150px;height:auto;display:block;">
       </div>
     </div>
     <div class="nf-card-actions">
