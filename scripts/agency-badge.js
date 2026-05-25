@@ -46,7 +46,7 @@
         <path id="nf-circle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/>
       </defs>
       <text class="nf-ring-text">
-        <textPath href="#nf-circle" startOffset="0%">NIK FRÜHSCHULZ · WEB DESIGN · WEB PERFORMANCE · MARKETING · VOICE AGENTS ·</textPath>
+        <textPath href="#nf-circle" startOffset="0%">FRÜHSCHULZ WEB PERFORMANCE · WEB DESIGN · MARKETING · VOICE AGENTS ·</textPath>
       </text>
     </svg>
     <img class="nf-photo" src="${base}assets/nf-logo.webp" alt="Nik Frühschulz"
@@ -63,8 +63,8 @@
       <img class="nf-card-photo" src="${base}assets/nik-photo.webp" alt="Nik Frühschulz"
            onerror="this.style.display='none'">
       <div class="nf-card-info">
-        <strong>Nik Frühschulz</strong>
-        <span>Web Design · Web Performance · Marketing · Voice Agents</span>
+        <strong>Nick Frühschulz</strong>
+        <span>Web Performance · Web Design · Marketing · Voice Agents</span>
       </div>
     </div>
     <div class="nf-card-actions">
