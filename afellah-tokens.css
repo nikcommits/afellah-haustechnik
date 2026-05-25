@@ -393,7 +393,7 @@ h4 { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: up
   padding: 60px 0 24px;
 }
 .footer-grid {
-  display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 48px;
+  display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 48px;
   margin-bottom: 48px;
 }
 .footer-logo { height: 38px; width: auto; margin-bottom: 16px; }
