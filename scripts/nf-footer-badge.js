@@ -32,8 +32,8 @@
     <div class="nf-card-body">
       <img class="nf-card-avatar" src="assets/nik-photo.webp" alt="Nik Frühschulz" onerror="this.style.display='none'">
       <div class="nf-card-info">
-        <strong>Nik Frühschulz</strong>
-        <span>Web Performance · Voice Agents</span>
+        <strong>Nick Frühschulz</strong>
+        <span>Web Performance</span>
       </div>
     </div>
     <div class="nf-card-actions">
