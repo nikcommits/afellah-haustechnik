@@ -1,12 +1,6 @@
 (function () {
   const css = `
-#nf-badge{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
-.nf-trigger{position:relative;width:80px;height:80px;border-radius:50%;border:none;background:transparent;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35))}
-.nf-ring{position:absolute;inset:0;width:100%;height:100%;animation:nf-spin 12s linear infinite}
-.nf-ring-text{font-size:10.5px;font-weight:700;letter-spacing:.05em;fill:#ffffff;font-family:system-ui,sans-serif}
-@keyframes nf-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-.nf-photo{width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid #fff;position:relative;z-index:1}
-.nf-photo-fallback{display:none;width:54px;height:54px;border-radius:50%;background:#e0e0e0;color:#555;font-size:16px;font-weight:700;align-items:center;justify-content:center;border:2px solid #fff;position:relative;z-index:1}
+.nf-card-wrap{position:fixed;bottom:24px;right:24px;z-index:9999}
 .nf-card{background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.18);width:280px;overflow:hidden;transform-origin:bottom right;animation:nf-card-in .2s ease}
 .nf-card[hidden]{display:none!important}
 @keyframes nf-card-in{from{opacity:0;transform:scale(.9) translateY(8px)}to{opacity:1;transform:scale(1) translateY(0)}}
@@ -24,6 +18,7 @@
 .nf-btn-web{background:#1a1a1a;color:#fff}
 .nf-btn-wa{background:#25d366;color:#fff}
 .nf-btn:hover{opacity:.88}
+.nf-footer-badge{cursor:pointer}
 #nf-overlay{display:none;position:fixed;inset:0;z-index:9998}
 #nf-overlay.active{display:block}
 `;
@@ -38,21 +33,8 @@
     return '';
   })();
 
-  const html = `
-<div id="nf-badge">
-  <button class="nf-trigger" aria-label="Kontakt Nik Frühschulz" onclick="nfToggle()">
-    <svg class="nf-ring" viewBox="0 0 120 120" aria-hidden="true">
-      <defs>
-        <path id="nf-circle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/>
-      </defs>
-      <text class="nf-ring-text">
-        <textPath href="#nf-circle" startOffset="0%">FRÜHSCHULZ WEB PERFORMANCE · WEB DESIGN · MARKETING · VOICE AGENTS ·</textPath>
-      </text>
-    </svg>
-    <img class="nf-photo" src="${base}assets/nf-logo.webp" alt="Nik Frühschulz"
-         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-    <span class="nf-photo-fallback" aria-hidden="true">NF</span>
-  </button>
+  const cardHtml = `
+<div class="nf-card-wrap">
   <div class="nf-card" id="nf-card" role="dialog" aria-label="Kontakt Nik Frühschulz" hidden>
     <button class="nf-close" onclick="nfToggle()" aria-label="Schließen">&#x2715;</button>
     <div class="nf-card-header">
@@ -63,7 +45,7 @@
       <img class="nf-card-photo" src="${base}assets/nik-photo.webp" alt="Nik Frühschulz"
            onerror="this.style.display='none'">
       <div class="nf-card-info">
-        <strong>Nick Frühschulz</strong>
+        <strong>Nik Frühschulz</strong>
         <span>Web Performance · Web Design · Marketing · Voice Agents</span>
       </div>
     </div>
@@ -83,22 +65,14 @@
   style.textContent = css;
   document.head.appendChild(style);
 
-  document.body.insertAdjacentHTML('beforeend', html);
+  document.body.insertAdjacentHTML('beforeend', cardHtml);
 
-  // Badge nur sichtbar wenn Footer im Viewport
-  const badge = document.getElementById('nf-badge');
-  badge.style.opacity = '0';
-  badge.style.pointerEvents = 'none';
-  badge.style.transition = 'opacity .3s ease';
-
-  const footer = document.querySelector('footer');
-  if (footer && window.IntersectionObserver) {
-    const observer = new IntersectionObserver(function (entries) {
-      const visible = entries[0].isIntersecting;
-      badge.style.opacity = visible ? '1' : '0';
-      badge.style.pointerEvents = visible ? 'auto' : 'none';
-    }, { threshold: 0.05 });
-    observer.observe(footer);
+  const footerBadge = document.querySelector('.nf-footer-badge');
+  if (footerBadge) {
+    footerBadge.addEventListener('click', function (e) {
+      e.preventDefault();
+      nfToggle();
+    });
   }
 
   window.nfToggle = function () {
